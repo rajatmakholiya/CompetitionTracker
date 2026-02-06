@@ -41,9 +41,9 @@ const App: React.FC = () => {
       const typeParam = activeCategory === "Sports" ? "sports" : "pop-culture";
 
       if (activeTab === TabType.ARTICLES) {
-        url = `http://localhost:5000/api/articles?type=${typeParam}`;
+        url = `https://competitiontracker-4ikc.onrender.com/api/articles?type=${typeParam}`;
       } else if (activeTab === TabType.TIER_2) {
-        url = `http://localhost:5000/api/tier2?type=${typeParam}`;
+        url = `https://competitiontracker-4ikc.onrender.com/api/tier2?type=${typeParam}`;
       }
 
       try {
